@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rundown\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-27 23:00+0700\n"
+"PO-Revision-Date: 2013-02-27 23:01+0700\n"
+"Last-Translator: kharisblank <kharisblank@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:18
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: ../404.php:24
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: ../404.php:33
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../404.php:41
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: ../archive.php:24
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:26
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:28
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:30
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../archive.php:32
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../archive.php:34
+msgid "Blog Archives"
+msgstr ""
+
+#: ../archive.php:51
+msgid "Error 404 - Not Found"
+msgstr ""
+
+#: ../archive.php:52
+msgid "It seems what you are looking for can not be found."
+msgstr ""
+
+#: ../comments.php:11
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: ../comments.php:14
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:55
+msgid "Comments are disabled"
+msgstr ""
+
+#: ../content-aside.php:18
+#: ../content-audio.php:18
+#: ../content-gallery.php:18
+#: ../content-image.php:18
+#: ../content-link.php:18
+#: ../content-page.php:17
+#: ../content-quote.php:18
+#: ../content-single.php:15
+#: ../content-status.php:18
+#: ../content-video.php:18
+#: ../content.php:18
+#, php-format
+msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: ../content-aside.php:24
+#: ../content-audio.php:24
+#: ../content-gallery.php:24
+#: ../content-image.php:24
+#: ../content-link.php:24
+#: ../content-page.php:23
+#: ../content-quote.php:24
+#: ../content-single.php:21
+#: ../content-status.php:24
+#: ../content-video.php:24
+#: ../content.php:24
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../content-aside.php:28
+#: ../content-audio.php:28
+#: ../content-gallery.php:28
+#: ../content-image.php:28
+#: ../content-link.php:28
+#: ../content-page.php:27
+#: ../content-quote.php:28
+#: ../content-single.php:25
+#: ../content-status.php:28
+#: ../content-video.php:28
+#: ../content.php:28
+msgid "0 comment"
+msgstr ""
+
+#: ../content-aside.php:39
+#: ../content-audio.php:39
+#: ../content-chat.php:28
+#: ../content-gallery.php:39
+#: ../content-image.php:39
+#: ../content-link.php:39
+#: ../content-quote.php:39
+#: ../content-status.php:39
+#: ../content-video.php:39
+#: ../content.php:38
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../content-aside.php:42
+#: ../content-audio.php:42
+#: ../content-chat.php:31
+#: ../content-gallery.php:45
+#: ../content-image.php:42
+#: ../content-link.php:42
+#: ../content-page.php:37
+#: ../content-quote.php:42
+#: ../content-single.php:42
+#: ../content-status.php:42
+#: ../content-video.php:42
+#: ../content.php:41
+msgid "Pages:"
+msgstr ""
+
+#: ../content-aside.php:45
+#: ../content-audio.php:45
+#: ../content-chat.php:34
+#: ../content-gallery.php:48
+#: ../content-image.php:45
+#: ../content-link.php:45
+#: ../content-quote.php:45
+#: ../content-single.php:45
+#: ../content-status.php:45
+#: ../content-video.php:45
+#: ../content.php:44
+#, php-format
+msgid " Category: %1$s"
+msgstr ""
+
+#: ../content-aside.php:46
+#: ../content-audio.php:46
+#: ../content-chat.php:35
+#: ../content-gallery.php:49
+#: ../content-image.php:46
+#: ../content-link.php:46
+#: ../content-page.php:41
+#: ../content-quote.php:46
+#: ../content-single.php:46
+#: ../content-status.php:46
+#: ../content-video.php:46
+#: ../content.php:45
+msgid "Edit"
+msgstr ""
+
+#: ../content-chat.php:17
+msgid "by"
+msgstr ""
+
+#: ../footer.php:20
+msgid "You do not set up custom menu yet. Go to Appearance > Menus"
+msgstr ""
+
+#: ../footer.php:26
+msgid "Rundown"
+msgstr ""
+
+#: ../footer.php:26
+msgid " - Proudly powered by"
+msgstr ""
+
+#: ../footer.php:26
+msgid "WordPress"
+msgstr ""
+
+#: ../footer.php:34
+msgid "Scroll to top"
+msgstr ""
+
+#: ../functions.php:22
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:180
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:186
+msgid "Your comment is awaiting moderation"
+msgstr ""
+
+#: ../functions.php:192
+msgid "Reply"
+msgstr ""
+
+#: ../header.php:32
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../image.php:77
+#, php-format
+msgid " Full size (pixel): <a href=\"%1$s\" title=\"Link to full-size image\">%2$s &times; %3$s</a>, Posted in <a href=\"%4$s\" title=\"Return to %5$s\" rel=\"gallery\">%6$s</a>"
+msgstr ""
+
+#: ../image.php:99
+#: ../page-fullwidth.php:44
+#: ../single.php:20
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../image.php:100
+#: ../page-fullwidth.php:45
+#: ../single.php:21
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../index.php:22
+#: ../search.php:23
+msgid "&larr; Newer Entries"
+msgstr ""
+
+#: ../index.php:23
+#: ../search.php:24
+msgid "Older Entries &rarr;"
+msgstr ""
+
+#: ../index.php:32
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: ../search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../search.php:32
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: ../searchform.php:11
+msgid "Search"
+msgstr ""
+

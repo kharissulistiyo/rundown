@@ -1,0 +1,25 @@
+1.6.5 - 27 Feb 
+- Title tag improvement for SEO friendly
+- Add custom searchform
+- Typography improvement
+- Post meta improvement
+- CSS improvements:
+	- Calendar widget
+	- Submit button
+	- Quote post format
+
+1.6.4 - 25 Nov 2012
+- Prev/next image links for images in gallery
+- Display "Comments are disabled" message in posts
+- CSS improvement:
+	- Calendar widget
+
+1.6.3 - 24 Nov 2012
+- Primary menu improvement
+- CSS improvement:
+	- Widget title becomes higher
+	- Search box becomes higher as widget title changes
+	- Comment form section (Fix layout when Si Captcha Comments and Subscribe to Comments plugins are used)
+
+1.6.2 - 4 Nov 2012
+- Release

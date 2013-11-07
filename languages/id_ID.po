@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rundown\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-27 23:01+0700\n"
+"PO-Revision-Date: 2013-02-27 23:02+0700\n"
+"Last-Translator: kharisblank <kharisblank@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:18
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Ini hal yang menyebalkan bukan?"
+
+#: ../404.php:24
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Nampaknya kami tidak dapat menemukan yang anda cari. Mungkin dengan melakukan pencarian kata kunci atau menelusuri link berikut dapat membantu"
+
+#: ../404.php:33
+msgid "Most Used Categories"
+msgstr "Kategori populer"
+
+#: ../404.php:41
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Cobalah cari di arsip bulanan. %1$s"
+
+#: ../archive.php:24
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Arsip Harian: %s"
+
+#: ../archive.php:26
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Arsip Bulanan: %s"
+
+#: ../archive.php:28
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Arsip Tahunan: %s"
+
+#: ../archive.php:30
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Arsip Kategori: %s"
+
+#: ../archive.php:32
+#, php-format
+msgid "Tag Archives: %s"
+msgstr "Arsip Tag: %s"
+
+#: ../archive.php:34
+msgid "Blog Archives"
+msgstr "Arsip Blog"
+
+#: ../archive.php:51
+msgid "Error 404 - Not Found"
+msgstr "Error - Tidak Ditemukan"
+
+#: ../archive.php:52
+msgid "It seems what you are looking for can not be found."
+msgstr "Nampaknya apa yang anda cari tidak dapat ditemukan."
+
+#: ../comments.php:11
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Tolong jangan mengakses halaman ini secara langsung. Terimakasih!"
+
+#: ../comments.php:14
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Diproteksi dengan password. Masukkan password untuk melihat isi."
+
+#: ../comments.php:55
+msgid "Comments are disabled"
+msgstr "Komentar tidak diijinkan."
+
+#: ../content-aside.php:18
+#: ../content-audio.php:18
+#: ../content-gallery.php:18
+#: ../content-image.php:18
+#: ../content-link.php:18
+#: ../content-page.php:17
+#: ../content-quote.php:18
+#: ../content-single.php:15
+#: ../content-status.php:18
+#: ../content-video.php:18
+#: ../content.php:18
+#, php-format
+msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "<span class=\"sep\">Ditulis pada </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> oleh </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a>  &bull;  </span></span>"
+
+#: ../content-aside.php:24
+#: ../content-audio.php:24
+#: ../content-gallery.php:24
+#: ../content-image.php:24
+#: ../content-link.php:24
+#: ../content-page.php:23
+#: ../content-quote.php:24
+#: ../content-single.php:21
+#: ../content-status.php:24
+#: ../content-video.php:24
+#: ../content.php:24
+#, php-format
+msgid "View all posts by %s"
+msgstr "Lihat semua post dari %s"
+
+#: ../content-aside.php:28
+#: ../content-audio.php:28
+#: ../content-gallery.php:28
+#: ../content-image.php:28
+#: ../content-link.php:28
+#: ../content-page.php:27
+#: ../content-quote.php:28
+#: ../content-single.php:25
+#: ../content-status.php:28
+#: ../content-video.php:28
+#: ../content.php:28
+msgid "0 comment"
+msgstr "0 komentar"
+
+#: ../content-aside.php:39
+#: ../content-audio.php:39
+#: ../content-chat.php:28
+#: ../content-gallery.php:39
+#: ../content-image.php:39
+#: ../content-link.php:39
+#: ../content-quote.php:39
+#: ../content-status.php:39
+#: ../content-video.php:39
+#: ../content.php:38
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lanjut baca <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-aside.php:42
+#: ../content-audio.php:42
+#: ../content-chat.php:31
+#: ../content-gallery.php:45
+#: ../content-image.php:42
+#: ../content-link.php:42
+#: ../content-page.php:37
+#: ../content-quote.php:42
+#: ../content-single.php:42
+#: ../content-status.php:42
+#: ../content-video.php:42
+#: ../content.php:41
+msgid "Pages:"
+msgstr "Halaman:"
+
+#: ../content-aside.php:45
+#: ../content-audio.php:45
+#: ../content-chat.php:34
+#: ../content-gallery.php:48
+#: ../content-image.php:45
+#: ../content-link.php:45
+#: ../content-quote.php:45
+#: ../content-single.php:45
+#: ../content-status.php:45
+#: ../content-video.php:45
+#: ../content.php:44
+#, php-format
+msgid " Category: %1$s"
+msgstr "Kategori: %1$s"
+
+#: ../content-aside.php:46
+#: ../content-audio.php:46
+#: ../content-chat.php:35
+#: ../content-gallery.php:49
+#: ../content-image.php:46
+#: ../content-link.php:46
+#: ../content-page.php:41
+#: ../content-quote.php:46
+#: ../content-single.php:46
+#: ../content-status.php:46
+#: ../content-video.php:46
+#: ../content.php:45
+msgid "Edit"
+msgstr "Edit"
+
+#: ../content-chat.php:17
+msgid "by"
+msgstr "oleh"
+
+#: ../footer.php:20
+msgid "You do not set up custom menu yet. Go to Appearance > Menus"
+msgstr "Anda belum membuat menu kustomt. Masuk ke halaman admin, kemudian buka Tampilan > Menu"
+
+#: ../footer.php:26
+msgid "Rundown"
+msgstr "Rundown"
+
+#: ../footer.php:26
+msgid " - Proudly powered by"
+msgstr "- Diberdayakan oleh"
+
+#: ../footer.php:26
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../footer.php:34
+msgid "Scroll to top"
+msgstr "Geser ke atas"
+
+#: ../functions.php:22
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: ../functions.php:180
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s pada %2$s"
+
+#: ../functions.php:186
+msgid "Your comment is awaiting moderation"
+msgstr "Komentar sedang dimoderasi"
+
+#: ../functions.php:192
+msgid "Reply"
+msgstr "Balas"
+
+#: ../header.php:32
+#, php-format
+msgid "Page %s"
+msgstr "Halaman %s"
+
+#: ../image.php:77
+#, php-format
+msgid " Full size (pixel): <a href=\"%1$s\" title=\"Link to full-size image\">%2$s &times; %3$s</a>, Posted in <a href=\"%4$s\" title=\"Return to %5$s\" rel=\"gallery\">%6$s</a>"
+msgstr "Ukuran sebenarnya (pixel): <a href=\"%1$s\" title=\"Tautan ke gambar ukuran penuh\">%2$s &times; %3$s</a>, Diposkan pada <a href=\"%4$s\" title=\"Kembali ke %5$s\" rel=\"gallery\">%6$s</a>"
+
+#: ../image.php:99
+#: ../page-fullwidth.php:44
+#: ../single.php:20
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Sebelumnya"
+
+#: ../image.php:100
+#: ../page-fullwidth.php:45
+#: ../single.php:21
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Selanjutnya <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../index.php:22
+#: ../search.php:23
+msgid "&larr; Newer Entries"
+msgstr "&larr; Entri Paling Baru"
+
+#: ../index.php:23
+#: ../search.php:24
+msgid "Older Entries &rarr;"
+msgstr "Entri Paling Lawas &rarr;"
+
+#: ../index.php:32
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr "Maaf, tidak ada hasil yang ditemukan dari arsip yang diminta. Mungkin dengan melakukan pencarian kata kunci dapat membantu menemukan post yang relevan."
+
+#: ../search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Hasil Pencarian untuk: %s"
+
+#: ../search.php:32
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Maaf, tidak ada informasi yang cocok dengan kriteria pencarian. Cobalah dengan kata kunci yang berbeda."
+
+#: ../searchform.php:11
+msgid "Search"
+msgstr "Pencarian"
+
+#~ msgid "Select page"
+#~ msgstr "Pilih Halaman"
