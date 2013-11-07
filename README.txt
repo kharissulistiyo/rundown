@@ -2,8 +2,8 @@
 
 Theme name: Rundown
 Theme URI: http://www.kharissulistiyono.com/wp-labs/rundown-wordpress-theme
-Version: 1.5
-Contributor: Kharis Sulistiyono
+Version: 1.6
+Contributor: Kharis Sulistiyono (@kharissulistiyo)
 Contributor URI: http://www.kharissulistiyono.com
 
 Tags: dark, gray, two-columns, left-sidebar, right-sidebar, custom-header, custom-menu, full-width-template, post-formats, sticky-post
@@ -33,9 +33,38 @@ Installation via WordPress Dashboard
 5. Click 'Activate'
 6. Enjoy!
 
+== Important ==
+
+Do not set featured image in gallery image post, because Rundown theme does not support yet for that.
+Make sure you know what you do when implementing featured image in gallery image post. 
+
 == License Information ==
 
-Theme License: http://www.gnu.org/licenses/gpl-3.0.html
+Theme License: http://www.gnu.org/licenses/gpl-2.0.html
+
+	== Post format icons license information ==
+
+		/* License
+		------------------------------------------------------------ */
+
+		TERMS OF USE:
+
+		This work is licensed under the GNU General Public License v2.0.
+
+		To view a copy of this license, visit http://www.opensource.org/licenses/gpl-license.php.
+
+		If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+
+		We believe in Karma. If you use any of these graphics for your own projects, a linkback to us will go a long way.
+
+
+		/* Development
+		------------------------------------------------------------ */
+
+		The StudioPress Team
+
+		http://www.studiopress.com
+		http://www.copyblogger.com
 
 == Credit Informations ==
 
@@ -50,4 +79,10 @@ Theme License: http://www.gnu.org/licenses/gpl-3.0.html
 
 	Google Web Fonts
 
-	http://www.google.com/webfonts/	
+	http://www.google.com/webfonts
+	
+3. CSS reset by:
+
+	Eric Meyer's Reset CSS v2.0
+	
+	http://cssreset.com 

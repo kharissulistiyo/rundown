@@ -2,15 +2,13 @@
 /**
  * The template for displaying Comments
  *
- * @package WordPress
- * @subpackage Rundown
- * @since Rundown 1.0
+ * @since Rundown 1.6.4
  */
  ?>
 <?php
 
 	if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-		die (__('Please do not load this page directly. Thanks!'));
+		die (__('Please do not load this page directly. Thanks!', 'rundown'));
 
 	if ( post_password_required() ) { ?>
 		<?php _e('This post is password protected. Enter the password to view comments.', 'rundown'); ?>
@@ -24,8 +22,12 @@
 <div id="comments">
 
 <?php if ( have_comments() ) : ?>
-	
-	<h2 class="commenttitle"><?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'rundown' )); ?></h2>
+	<h2 id="commenttitle">
+		<?php
+			printf( _n( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'rundown' ),
+				number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+		?>
+	</h2>
 
 	<div class="navigation">
 		<div class="next-posts"><?php previous_comments_link() ?></div>
@@ -47,7 +49,12 @@
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
-		<p class="closed-comment"><?php _e('Comments are closed.', 'rundown'); ?></p>
+	 
+		<?php if ( is_single() ) { ?>
+		
+			<span class="comments-off"><?php echo _e('Comments are disabled', 'rundown'); ?></span>
+		
+		<?php } else {} ?>
 
 	<?php endif; ?>
 	

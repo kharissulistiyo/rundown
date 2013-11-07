@@ -1,11 +1,29 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the id=main div and all content after
+ *
+ * @since Rundown 1.6.3
+ */
+?>	
+
 		</div><!--/#main-->
 		
-		<div class="clear"></div>
+		<div class="clear"></div>		
 		
 		<div id="footer">
+		
+			<?php if(has_nav_menu('primary')) { 
+				wp_nav_menu( array( 'container_id' => 'primarynav-footer', 'theme_location' => 'primary' ) ); 
+				} else {
+					echo __('You do not set up custom menu yet. Go to Appearance > Menus', 'rundown');
+				}			
+			?>		
+		
 			<div class="footer-inner">
 				<span class="footcreditleft">&copy; <?php echo date('Y'); ?> - <?php bloginfo('name'); ?></span>
-				<span class="footcreditright"><a href="http://www.kharissulistiyono.com/rundown">RunDown Theme</a> <?php _e('by', 'rundown'); ?> <a href="http://www.kharissulistiyono.com">Kharis Sulistiyono</a> <?php _e(' - Proudly powered by', 'rundown'); ?> <a href="http://www.wordpress.org">WordPress</a></span>
+				<span class="footcreditright"><a href="http://www.kharissulistiyono.com/wp-labs/rundown-wordpress-theme/"><?php _e('Rundown', 'rundown'); ?></a> <?php _e(' - Proudly powered by', 'rundown'); ?> <a href="http://www.wordpress.org"><?php _e('WordPress', 'rundown'); ?></a></span>
 				<div class="clear"></div>
 			</div>	
 		</div><!--/#footer-->

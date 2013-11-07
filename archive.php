@@ -1,75 +1,43 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * The template for displaying Archive pages.
+ *
+ * Used to display archive-type pages if nothing more specific matches a query.
+ * For example, puts together date-based pages if no date.php file exists.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @since Rundown 1.5.2
+ */
+
+get_header(); ?>
 		
 		<div id="main">
 			
 			<div id="content">
 			
 				<?php if (have_posts()) : ?>
-
-					<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-
-					<?php /* If this is a category archive */ if (is_category()) { ?>
-						<h2 class="archive-title"><?php _e('Archive for the', 'rundown'); ?> &#8216;<?php single_cat_title(); ?>&#8217; <?php _e('Category', 'rundown'); ?></h2>
-
-					<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-						<h2 class="archive-title"><?php _e('Posts Tagged', 'rundown'); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h2>
-
-					<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-						<h2 class="archive-title"><?php _e('Archive for', 'rundown'); ?> <?php the_time('F jS, Y'); ?></h2>
-
-					<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-						<h2 class="archive-title"><?php _e('Archive for', 'rundown'); ?> <?php the_time('F, Y'); ?></h2>
-
-					<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-						<h2 class="archive-title"><?php _e('Archive for', 'rundown'); ?> <?php the_time('Y'); ?></h2>
-
-					<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-						<h2 class="archive-title"><?php _e('Author Archive', 'rundown'); ?></h2>
-
-					<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-						<h2 class="archive-title"><?php _e('Blog Archives', 'rundown'); ?></h2>
-					
-					<?php } ?>
+				
+					<h2 class="archive-title">
+						<?php if ( is_day() ) : ?>
+							<?php printf( __( 'Daily Archives: %s', 'rundown' ), '<span>' . get_the_date() . '</span>' ); ?>
+						<?php elseif ( is_month() ) : ?>
+							<?php printf( __( 'Monthly Archives: %s', 'rundown' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'rundown' ) ) . '</span>' ); ?>
+						<?php elseif ( is_year() ) : ?>
+							<?php printf( __( 'Yearly Archives: %s', 'rundown' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'rundown' ) ) . '</span>' ); ?>
+						<?php elseif ( is_category() ) : ?>
+							<?php printf( __( 'Category Archives: %s', 'rundown' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+						<?php elseif ( is_tag() ) : ?>
+							<?php printf( __( 'Tag Archives: %s', 'rundown' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
+						<?php else : ?>
+							<?php _e( 'Blog Archives', 'rundown' ); ?>
+						<?php endif; ?>			
+					</h2>
 
 					<?php while (have_posts()) : the_post(); ?>
-					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					
-						<div class="post-head">
-							<div class="meta"> 
-							
-								<?php rundown_post_format_label(); ?>  <?php the_time(get_option('date_format')); ?> <?php echo "|"; ?> <?php _e('by', 'rundown'); ?> <?php the_author(); ?> <?php echo "|"; ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-								
-							</div>
-							<h2 class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-						</div>
-						
-						<div class="entry">
-							
-							<?php 
-							
-							if ( has_post_format( 'gallery' ) || has_post_format( 'link' ) || has_post_format( 'video' ) || has_post_format('audio') || has_post_format('status') || has_post_format('quote') || has_post_format('chat') || has_post_format('image') || has_post_format('aside') ) {
-								the_content();
-							}
-			
-							else{	?>
 
-								<div class="excerpt">
-										
-									<p><?php rundown_excerpt(150); ?></p>
-								
-								</div>	
-							
-							<?php } ?>
-							
-							<div class="clear"></div>
-							
-							<div class="meta2"><?php printf( __(' Category: %1$s', 'rundown'), get_the_category_list( ', ' )); ?></div>				
-							
-						</div><!--/.entry-->
-						
-						<a class="morelink" href="<?php the_permalink() ?>"><?php _e('read more &rarr;', 'rundown'); ?></a>
-						
-					</div><!--/.post-->	
+						<?php get_template_part('content', get_post_format() ); ?>
 				
 					<?php endwhile; ?>
 
