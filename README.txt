@@ -2,7 +2,7 @@
 
 Theme name: Rundown
 Theme URI: http://www.kharissulistiyono.com/wp-labs/rundown-wordpress-theme
-Version: 1.6
+Version: 1.7
 Contributor: Kharis Sulistiyono (@kharissulistiyo)
 Contributor URI: http://www.kharissulistiyono.com
 
@@ -42,29 +42,29 @@ Make sure you know what you do when implementing featured image in gallery image
 
 Theme License: http://www.gnu.org/licenses/gpl-2.0.html
 
-	== Post format icons license information ==
+=== Post format icons license information ===
 
-		/* License
-		------------------------------------------------------------ */
+	/* License
+	------------------------------------------------------------ */
 
-		TERMS OF USE:
+	TERMS OF USE:
 
-		This work is licensed under the GNU General Public License v2.0.
+	This work is licensed under the GNU General Public License v2.0.
 
-		To view a copy of this license, visit http://www.opensource.org/licenses/gpl-license.php.
+	To view a copy of this license, visit http://www.opensource.org/licenses/gpl-license.php.
 
-		If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
+	If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
 
-		We believe in Karma. If you use any of these graphics for your own projects, a linkback to us will go a long way.
+	We believe in Karma. If you use any of these graphics for your own projects, a linkback to us will go a long way.
 
 
-		/* Development
-		------------------------------------------------------------ */
+	/* Development
+	------------------------------------------------------------ */
 
-		The StudioPress Team
+	The StudioPress Team
 
-		http://www.studiopress.com
-		http://www.copyblogger.com
+	http://www.studiopress.com
+	http://www.copyblogger.com
 
 == Credit Informations ==
 
