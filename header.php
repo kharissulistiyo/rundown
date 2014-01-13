@@ -5,6 +5,7 @@
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @since Rundown 1.6.5
+ * @update 1.7 
  */
 ?>
 <!DOCTYPE html>
@@ -58,12 +59,7 @@
 			<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />			
 		<?php else: endif; ?>
 		
-		<?php if(has_nav_menu('primary')) { 
-			wp_nav_menu( array( 'container_id' => 'primarynav', 'theme_location' => 'primary' ) ); 
-			} else {
-				echo __('You do not set up custom menu yet. Go to Appearance > Menus', 'rundown');
-			}			
-		?>
+		<?php wp_nav_menu( array( 'container_id' => 'primarynav', 'theme_location' => 'primary' ) ); ?>
 		
 		<div class="clear"></div>	
 				
