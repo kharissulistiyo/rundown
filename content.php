@@ -3,6 +3,7 @@
  * The default template for displaying content
  *
  * @since Rundown 1.6.5
+ * @update 1.7
  */
 ?>
 
@@ -33,9 +34,36 @@
 	
 	<div class="entry">
 
-		<?php echo get_the_post_thumbnail($id, 'thumbnail', array('class' => 'alignleft'));  /* Get post thumbnail as in WordPress Codex: http://codex.wordpress.org/Function_Reference/get_the_post_thumbnail */	?>
+		
+		<?php 
+		
+		
+		$excerpt_mode = get_option( 'rundown_magazine' );
+		$excerpt_limit = get_option( 'rundown_excerpt' );
+		
+		if($excerpt_mode == 1 ){ ?> 
+		
+			
+			<div class="excerpt-on">
 				
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'rundown' ) ); ?>	
+				<?php echo get_the_post_thumbnail($id, 'thumbnail'); ?>
+				
+				<div class="content-excerpt">
+					<p><?php echo rundown_excerpt($excerpt_limit); ?></p>
+					<div><a href="#" class="more-link"><?php _e('Continue reading', 'rundown'); ?></a></div>
+				</div>
+			</div>
+			
+		
+		<?php } else { ?>
+		
+
+			<?php echo get_the_post_thumbnail($id, 'thumbnail', array('class' => 'alignleft'));  /* Get post thumbnail as in WordPress Codex: http://codex.wordpress.org/Function_Reference/get_the_post_thumbnail */	?>
+					
+			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'rundown' ) ); ?>		
+		
+		<?php } ?>
+		
 		
 		<div class="clear"></div>
 		<?php wp_link_pages(array('before' => '<div class="page-link">' . __('Pages:', 'rundown'), 'after' => '</div>'));?>
