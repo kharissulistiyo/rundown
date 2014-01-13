@@ -1,3 +1,11 @@
+1.7
+- Wide screen ready
+- Add Rundown Options
+	- Magazine style
+	- Excerpt limit
+	- Style options (default and classic)
+- Fix minor CSS bugs
+
 1.6.5 - 27 Feb 
 - Title tag improvement for SEO friendly
 - Add custom searchform
