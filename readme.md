@@ -1,4 +1,6 @@
-== General Informations ==
+<img src="https://raw.github.com/kharissulistiyo/rundown/master/screenshot.png" alt="Rundown WordPress Theme" />
+
+## General Informations
 
 Theme name: Rundown
 Theme URI: http://www.kharissulistiyono.com/wp-labs/rundown-wordpress-theme
@@ -13,9 +15,9 @@ Description: When something seems so hard to be done, do it point-by-point. Rund
 
 Demo: http://www.kharissulistiyono.com/rundown 
 
-== Installation ==
+## Installation
 
-Installation via FTP Client Software
+### Installation via FTP Client Software
 
 1. Unzip the theme package rundown.zip
 2. Upload unzipped 'rundown' to the '/wp-content/themes/' directory using your favorite FTP client software
@@ -23,7 +25,7 @@ Installation via FTP Client Software
 4. Click 'Activate' link below rundown thumbnail
 5. Enjoy! 
 
-Installation via WordPress Dashboard
+### Installation via WordPress Dashboard
 
 2. Login to your WordPress admin dashboard
 1. From your Admin page (Dashboard), use the menu to select Themes -> Add New
@@ -33,16 +35,16 @@ Installation via WordPress Dashboard
 5. Click 'Activate'
 6. Enjoy!
 
-== Important ==
+## Important 
 
 Do not set featured image in gallery image post, because Rundown theme does not support yet for that.
 Make sure you know what you do when implementing featured image in gallery image post. 
 
-== License Information ==
+### License Information
 
 Theme License: http://www.gnu.org/licenses/gpl-2.0.html
 
-=== Post format icons license information ===
+### Post format icons license information
 
 	/* License
 	------------------------------------------------------------ */
@@ -66,7 +68,7 @@ Theme License: http://www.gnu.org/licenses/gpl-2.0.html
 	http://www.studiopress.com
 	http://www.copyblogger.com
 
-== Credit Informations ==
+## Credit Informations
 
 1. Post format icons by: 
 
