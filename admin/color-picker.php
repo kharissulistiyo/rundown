@@ -1,0 +1,16 @@
+<?php
+
+add_action( 'admin_enqueue_scripts', 'fillpress_enqueue_color_picker' );
+function fillpress_enqueue_color_picker() {
+
+    wp_enqueue_style( 'wp-color-picker' );
+	
+	wp_register_script( 'iris', admin_url() . 'js/iris.min.js', array( 'jquery-ui-draggable', 'jquery-ui-slider', 'jquery-touch-punch' ), false, 1 ); 
+	wp_register_script( 'wp-color-picker', admin_url() . 'js/color-picker.min.js', array( 'iris' ), false, 1 ); 
+	wp_register_script( 'fillpress-color-picker', get_template_directory_uri() . '/admin/fillpress-color-picker.js', array( 'iris' ), false, true ); 
+	
+	wp_enqueue_script('iris');
+	wp_enqueue_script('wp-color-picker');
+	wp_enqueue_script('fillpress-color-picker');
+	
+}
