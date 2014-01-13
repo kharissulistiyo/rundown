@@ -4,10 +4,12 @@
  * The template for displaying main functions
  *
  * @since Rundown 1.6.3
+ * @update 1.7 
  */
 
 add_action( 'after_setup_theme', 'rundown_theme_setup' );
 
+if ( ! function_exists( 'rundown_theme_setup' ) ) :
 function rundown_theme_setup() {
 
 	/* Make Rundown available for translation.
@@ -32,13 +34,32 @@ function rundown_theme_setup() {
 
 	// Add custom background
 	add_theme_support( 'custom-background' );
-	$defaults = array(
-		'default-color' => 'e7e7e7',
-		'default-image' => get_template_directory_uri() . '/images/bg.png', 
-		'wp-head-callback' => '_custom_background_cb',
-		'admin-head-callback' => '',
-		'admin-preview-callback' => ''
-	);
+	
+	if(get_option('style_setting') == 'classic'){
+		
+		
+		$defaults = array(
+			'default-color' => 'e7e7e7',
+			'default-image' => get_template_directory_uri() . '/images/bg.png', 
+			'wp-head-callback' => '_custom_background_cb',
+			'admin-head-callback' => '',
+			'admin-preview-callback' => ''
+		);
+		
+	} else {	
+		
+	
+
+		$defaults = array(
+			'default-color' => 'e7e7e7',
+			'wp-head-callback' => '_custom_background_cb',
+			'admin-head-callback' => '',
+			'admin-preview-callback' => ''
+		);
+	
+	
+	}	
+	
 	add_theme_support( 'custom-background', $defaults );
 
 	// Add custom header
@@ -75,20 +96,44 @@ function rundown_theme_setup() {
 		
 	// Add editor style
 	add_editor_style( 'styles/editor-style.css' );	
+	
+	// Include admin setting
+	
+	require_once('admin/fillpress.php');
+	
+	
+	global $pagenow;
+
+	if ( is_admin() && 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
+		wp_redirect(admin_url("themes.php?page=rundown-settings"));
+	}	
+	
 
 } // after_setup_theme
 
+
+endif;
+
+
 // IE style
+
+if ( ! function_exists( 'rundown_ie_style' ) ) :
 
 function rundown_ie_style(){ ?>
 <!--[if IE]>
 	<link href="<?php echo get_template_directory_uri() ; ?>/styles/ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->	
 <?php }
+
+endif;
+
 add_action('wp_head', 'rundown_ie_style');
 
 
 // Enqueue script
+
+if ( ! function_exists( 'rundown_scripts_method' ) ) :
+
 function rundown_scripts_method() {
 
 	wp_enqueue_script(
@@ -97,27 +142,51 @@ function rundown_scripts_method() {
 		array('jquery')
 	);
 	
+	if(get_option('style_setting') == 'classic'){
+	
+		wp_enqueue_style('skin-classic', get_stylesheet_directory_uri() . '/styles/skin-classic.css', array(), null ); 
+	
+	}
+	
 }
+
+endif;
+
 add_action('wp_enqueue_scripts', 'rundown_scripts_method');
 
 // Enqueue comment reply script
+
+if ( ! function_exists( 'rundown_enqueue_comment_reply_script' ) ) :
+
 function rundown_enqueue_comment_reply_script() {
 	if ( comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
+endif;
+
 add_action( 'comment_form_before', 'rundown_enqueue_comment_reply_script' );
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
+ 
+if ( ! function_exists( 'rundown_page_menu_args' ) ) : 
+ 
 function rundown_page_menu_args( $args ) {
 	$args['show_home'] = true;
 	return $args;
 }
+
+endif;
+
 add_filter( 'wp_page_menu_args', 'rundown_page_menu_args' );
 
 // Build searchform
+
+if ( ! function_exists( 'rundown_search_form' ) ) :
+
 function rundown_search_form( $form ) {
 
     $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
@@ -130,9 +199,14 @@ function rundown_search_form( $form ) {
     return $form;
 }
 
+endif;
+
 add_filter( 'get_search_form', 'rundown_search_form' );
 
 // Display post format icon in single.php
+
+if ( ! function_exists( 'rundown_post_format_label' ) ) :
+
 function rundown_post_format_label() {
 
 	if ( has_post_format( 'video' )) {
@@ -168,8 +242,17 @@ function rundown_post_format_label() {
 
 }
 
+
+endif;
+
 // Build comment list
-function rundown_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comment; ?>
+
+
+if ( ! function_exists( 'rundown_comments' ) ) :
+
+function rundown_comments($comment, $args, $depth) { 
+
+	$GLOBALS['comment'] = $comment; ?>
 
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 	
@@ -196,4 +279,26 @@ function rundown_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comm
 		</div>	
 	</li>	
 
-<?php } ?>
+<?php }
+
+endif;
+
+
+
+// Custom excerpt
+
+if ( ! function_exists( 'rundown_excerpt' ) ) :
+
+function rundown_excerpt($limit) {
+  $excerpt = explode(' ', get_the_excerpt(), $limit);
+  if (count($excerpt)>=$limit) {
+	array_pop($excerpt);
+	$excerpt = implode(" ",$excerpt);
+  } else {
+	$excerpt = implode(" ",$excerpt);
+  }	
+  $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+  return $excerpt;
+}
+
+endif;
