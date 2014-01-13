@@ -88,3 +88,8 @@ Theme License: http://www.gnu.org/licenses/gpl-2.0.html
 	Eric Meyer's Reset CSS v2.0
 	
 	http://cssreset.com 
+	
+
+### Contact Me
+
+I'm available for freelance works. Contact me <a href="http://www.kharissulistiyono.com/#contact" target="_blank">here</a> to talk about a project you are working on.	
