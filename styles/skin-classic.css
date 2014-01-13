@@ -1,0 +1,30 @@
+/* Content
+================================= */
+
+.post, .type-page, .not-found, div.attachment{
+	border:1px solid #a2a1a1;
+	-moz-box-shadow: 0 0 7px #acabab;
+	-webkit-box-shadow: 0 0 7px#acabab;
+	box-shadow: 0 0 7px #acabab;	
+	background:#f9f9f9;
+}
+
+.post-head{
+	padding:1.250em 1.563em 0 1.563em;
+	border-bottom:1px solid #d4d3d3;
+	background:#f7f7f7 url('../images/pattern1.png');
+}
+
+.meta,
+.meta2{
+	color:#555555;
+}
+
+.meta a, .meta a:active, .meta:visited,
+.meta2 a, .meta2 a:active, .meta2:visited {
+    color: #000;
+}
+
+.post-head span.post-format{
+	margin:-6px -6px 0 0;
+}
