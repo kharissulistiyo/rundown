@@ -5,6 +5,7 @@
  * Contains the closing of the id=main div and all content after
  *
  * @since Rundown 1.6.3
+ * @update 1.7 
  */
 ?>	
 
@@ -14,12 +15,7 @@
 		
 		<div id="footer">
 		
-			<?php if(has_nav_menu('primary')) { 
-				wp_nav_menu( array( 'container_id' => 'primarynav-footer', 'theme_location' => 'primary' ) ); 
-				} else {
-					echo __('You do not set up custom menu yet. Go to Appearance > Menus', 'rundown');
-				}			
-			?>		
+			<?php wp_nav_menu( array( 'container_id' => 'primarynav-footer', 'theme_location' => 'primary' ) ); ?>		
 		
 			<div class="footer-inner">
 				<span class="footcreditleft">&copy; <?php echo date('Y'); ?> - <?php bloginfo('name'); ?></span>
